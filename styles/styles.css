@@ -1,0 +1,119 @@
+/****------------ PRE STYLES ------------****/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/****-------------- STYLES --------------****/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+h1{
+    font-family: 'Fraunces';
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    margin-bottom: 20px;
+}
+h4, p, span{
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 20px;
+}
+.category{
+    letter-spacing: 5px;
+}
+.m-image{
+    display: none;
+}
+.d-image{
+    display: flex;
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+    -webkit-border-radius: 20px 0 0 20px;
+    -moz-border-radius: 20px 0 0 20px;
+    -ms-border-radius: 20px 0 0 20px;
+    -o-border-radius: 20px 0 0 20px;
+}
+
+.data{
+    padding: 40px;
+}
+.container{
+    display: flex;
+    height: 98vh;
+    justify-content: center;
+
+}
+.row{
+    width: 650px;
+    display: flex;
+    margin: auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.col-lg-6{
+    width: 50%;
+}
+.btn{
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    padding: 20px;
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+.btn:hover{
+    background-color: hsl(158, 48%, 14%);
+}
+.btn svg{
+    padding-right: 10px;
+}
+.price{
+    color: hsl(158, 36%, 37%);
+}
+span{
+    position:relative;
+    bottom: 50px;
+    left: 150px;
+    text-decoration:line-through;
+}
+
+@media (max-width: 375px){
+    .d-image{
+        display:none;
+    }
+    .m-image{
+        display:block;
+        width: 100%;
+        border-radius: 20px 20px 0 0 ;
+        -webkit-border-radius: 20px 20px 0 0 ;
+        -moz-border-radius: 20px 20px 0 0 ;
+        -ms-border-radius: 20px 20px 0 0 ;
+        -o-border-radius: 20px 20px 0 0 ;
+    }
+    .row{
+        width: 90dvw;
+        display: flow-root;
+    }
+    .col-lg-6{
+        width: 100%;
+    }
+    .data{
+        padding: 20px;
+    }
+}
